@@ -1,0 +1,5 @@
+Architect POV - Instead of using custom logging for every OpenAI call, use Instrumentation libraries.
+They wrap around the client and trace the entire request-response cycle.
+
+Trace - Entire journey of a single request
+Span - A single unit of work within trace
