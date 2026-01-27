@@ -3,3 +3,7 @@ They wrap around the client and trace the entire request-response cycle.
 
 Trace - Entire journey of a single request
 Span - A single unit of work within trace
+
+When the client.chat.completions.create is called, the wrapper starts the time, captures the token, the user and generated system message and sends everything to the trace endpoint
+
+In OpenTelemetry if a new span is opened while a previous span is already open, they link together and create a hierarchy
